@@ -23,6 +23,7 @@ export default class AppContainer extends Component {
     this.prev = this.prev.bind(this);
     this.selectAlbum = this.selectAlbum.bind(this);
     this.deselectAlbum = this.deselectAlbum.bind(this);
+    this.selectArtist = this.selectArtist.bind(this);
   }
 
   componentDidMount () {
@@ -134,7 +135,8 @@ export default class AppContainer extends Component {
               selectAlbum: this.selectAlbum,
               //Artists
               artists: this.state.artists,
-              selectArtist: this.state.selectArtist
+              selectedArtist: this.state.selectedArtist,
+              selectArtist: this.selectArtist
               })
               : null
         }

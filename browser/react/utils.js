@@ -1,4 +1,5 @@
 export const convertSong = (song) => {
+  console.log('called');
   song.audioUrl = `/api/songs/${song.id}/audio`;
   return song;
 };
